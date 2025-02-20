@@ -1,0 +1,113 @@
+/* App.css */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif; /* Use a sans-serif font */
+  background-color: #ef9898; /* Light grey background */
+  color: #333; /* Dark text color for better readability */
+}
+
+/* Container */
+.container {
+  max-width: 1200px; /* Max width for larger screens */
+  margin: 0 auto; /* Center the container */
+  padding: 1rem; /* Padding around the content */
+}
+
+/* Navbar */
+.navbar {
+  background-color: lightblue; /* Navbar background color */
+  padding: 1rem; /* Padding around navbar items */
+}
+
+.navbar ul {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Flexbox layout for horizontal items */
+  justify-content: space-around; /* Space items evenly */
+}
+
+.navbar-link {
+  color: #333; /* Text color */
+  text-decoration: none; /* Remove underline */
+  padding: 0.5rem 1rem; /* Padding for links */
+  transition: background-color 0.3s; /* Transition for background color */
+}
+
+.navbar-link:hover {
+  background-color: rgba(255, 165, 0, 0.2); /* Light hover effect */
+}
+
+/* Login Container */
+.login-container {
+  background-color: white; /* White background for login */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 2rem; /* Padding inside the container */
+  margin-top: 2rem; /* Margin at the top */
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 1rem; /* Space between form groups */
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%; /* Full width */
+  padding: 0.5rem; /* Padding inside input */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 3px; /* Slightly rounded corners */
+}
+
+button {
+  background-color: lightblue; /* Button background */
+  color: white; /* Button text color */
+  padding: 0.5rem 1rem; /* Padding for button */
+  border: none; /* Remove border */
+  border-radius: 3px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+}
+
+button:hover {
+  background-color: #ffa500; /* Darker background on hover */
+}
+
+/* Error Message */
+.error-message {
+  color: red; /* Red color for error messages */
+  margin-bottom: 1rem; /* Space below error messages */
+}
+
+/* Links */
+/* App.css */
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure it takes full height */
+}
+
+.home-link {
+  margin-top: auto; /* Push to the bottom */
+  padding: 10px 20px; /* Add padding */
+  font-size: 1em; /* Font size */
+  color: white; /* Text color */
+  background-color: #007BFF; /* Button background color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Ensure it acts like a button */
+}
+
+.home-link:hover {
+  background-color: #0056b3; /* Darken on hover */
+}
+
+

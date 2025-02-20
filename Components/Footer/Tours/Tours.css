@@ -1,0 +1,121 @@
+/* Tours.css */
+
+/* Basic Layout and Structure */
+.tours {
+    margin: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  .tours h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: 70px;
+  }
+  
+  .tours p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Table Styles */
+  .tours-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .tours-table th, .tours-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tours-table th {
+    background-color:grey;
+    color: white;
+    font-size: 1.1rem;
+  }
+  
+  .tours-table td {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .tours-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Empty State */
+  .tours-table td[colspan="5"] {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #999;
+    padding: 20px;
+  }
+  
+  /* Button Styles */
+  .book-now-btn {
+    background-color: lightcoral;        /* Button background color */
+    color: white;                        /* Text color */
+    padding: 12px 20px;                   /* Increased padding for better clickability */
+    border: none;                        /* Remove border */
+    border-radius: 4px;                  /* Rounded corners */
+    cursor: pointer;                     /* Pointer cursor for interactivity */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    font-size: 1rem;                     /* Ensure font size is appropriate */
+    text-align: center;                  /* Center the text inside the button */
+    min-width: 120px;                    /* Ensure button has a minimum width */
+  }
+  
+  /* Hover effect */
+  .book-now-btn:hover {
+    background-color: lightgreen; /* Slightly darker background color on hover */
+  }
+  /* Loading and Error Messages */
+  .loading {
+    font-size: 1.2rem;
+    color: #4CAF50;
+  }
+  
+  .error {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .booking-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+  }
+  .more-info-btn {
+    background-color: lightcoral;        /* Button background color */
+    color: white;                        /* Text color */
+    padding: 12px 20px;                   /* Increased padding for better clickability */
+    border: none;                        /* Remove border */
+    border-radius: 4px;                  /* Rounded corners */
+    cursor: pointer;                     /* Pointer cursor for interactivity */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    font-size: 1rem;                     /* Ensure font size is appropriate */
+    text-align: center;                  /* Center the text inside the button */
+    min-width: 120px; 
+  }
+  
+  .more-info-btn:hover {
+    background-color: lightgreen; /* Slightly darker background color on hover */
+  }
+  
+  
+  

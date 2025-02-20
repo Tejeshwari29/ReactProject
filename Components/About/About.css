@@ -1,0 +1,96 @@
+/* About.css */
+.aboutSection {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    margin: 0; /* Ensure there's no margin */
+    padding: 0;
+    height: 100vh; /* Make sure the section fills the entire viewport height */
+}
+
+.videoDiv {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Set the video container to fill the viewport height */
+}
+
+.videoDiv video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Make sure the video covers the entire background */
+    filter: brightness(50%); /* Dim the video for better text visibility */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    z-index: 1; /* Ensure overlay text appears above the video */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4); /* Slightly dark background for text readability */
+    border-radius: 10px; /* Optional: Rounded corners for the overlay */
+}
+
+.overlay h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-top: 50px;
+
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle text shadow for emphasis */
+}
+
+.overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.homeButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: lightblue; /* Coral color */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.homeButton:hover {
+    background-color: #ff4500; /* Darker coral on hover */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0; /* Remove any margin */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .overlay h3 {
+        font-size: 1.5rem;
+    }
+
+    .overlay p {
+        font-size: 1rem;
+    }
+
+    .homeButton {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}

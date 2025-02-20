@@ -1,0 +1,172 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Use border-box for easier sizing */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit; /* Apply box-sizing to all elements */
+}
+
+/* Navbar styles */
+.navbarsection {
+    background-color: #f8f9fa; /* Light background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%; /* Full width */
+    position: fixed; /* Relative positioning for dropdowns */
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transition for background color and shadow */
+}
+
+.scrolled {
+    background-color: #e9ecef; /* Darker shade on scroll */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow on scroll */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; /* Padding for spacing */
+    width: 100%; /* Ensure header is full width */
+}
+
+.logo {
+    color: #333; /* Dark text color */
+    text-decoration: none; /* Remove underline from link */
+    display: flex;
+    align-items: center; /* Center logo vertically */
+}
+
+.icon {
+    margin-right: 0.5rem; /* Spacing between icon and text */
+    font-size: 1.5rem; /* Icon size */
+}
+
+.navBar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-right: auto; /* Center items vertically */
+}
+
+.navlists {
+    display: flex;
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+.navItem {
+    margin: 0 1rem; /* Horizontal spacing between navigation items */
+    padding-left: 20px; /* Left padding to give extra space to the icon/text */
+    display: flex; /* Ensure the items align properly */
+    align-items: center; /* Vertically center the icons and text */
+    transition: padding-left 0.3s ease; /* Smooth transition for padding change */
+}
+
+.navItem:hover {
+    padding-left: 25px; /* Add a little more space when hovering over items for effect */
+}
+
+.navlink {
+    text-decoration: none; /* Remove underline from link */
+    color: #333; /* Dark text color */
+    font-weight: 500; /* Medium weight */
+    transition: color 0.3s;
+    margin: 0 1rem; /* Spacing between items */
+    /* Smooth color transition */
+}
+
+.navlink:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.btn {
+    background-color:blue; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 0.5rem 1rem; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 1rem; /* Spacing before the button */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+/* Responsive Navbar styles */
+.closeNavbar, .toggleNavbar {
+    display: none; /* Hidden by default for desktop */
+}
+
+@media (max-width: 768px) {
+    .navlists {
+        display: none; /* Hide nav items by default on mobile */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute; /* Position them absolutely */
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+        background-color: white; /* Background color for dropdown */
+        width: 100%; /* Full width */
+        z-index: 10; /* Make sure it’s above other content */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    }
+
+    .navlists.active {
+        display: flex; /* Show nav items when active */
+    }
+
+    .toggleNavbar {
+        display: block; /* Show toggle button on mobile */
+        cursor: pointer; /* Pointer cursor */
+    }
+
+    .closeNavbar {
+        display: block; /* Show close button */
+        cursor: pointer; /* Pointer cursor */
+        font-size: 1.5rem; /* Icon size */
+    }
+
+    .activeNavbar {
+        display: flex; /* Show when active */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute; /* Positioning for dropdown */
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+        right: 0;
+        background-color: #fff; /* Background color when active */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+        z-index: 10; /* Ensure it appears above other elements */
+    }
+}
+
+/* Adjust navbar icons to smaller size */
+.navIcon {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 14px; /* Smaller icon size (adjust as needed) */
+}
+
+/* Optional: If you want to adjust the navbar when it's scrolled */
+.navbarsection.scrolled .header {
+    background-color:white; /* Example of background change on scroll */
+}
+
+/* Optional: Style for the toggleNavbar icon */
+.toggleNavbar .icon {
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Style the close button */
+.closeNavbar .icon {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}

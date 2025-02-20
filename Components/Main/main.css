@@ -1,0 +1,147 @@
+/* Reset some default styles */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Full Width Container */
+.main {
+    padding: 0;
+    background-color: #f9f9f9;
+    width: 100vw; /* Full viewport width */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Title Section */
+.secTitle {
+    text-align: center;
+    padding: 2rem 0;
+    margin: 0;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Review Section */
+.secContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem; /* Small padding for inner content */
+}
+
+.singleReview {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.singleReview:hover {
+    transform: translateY(-5px);
+}
+
+.reviewHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.reviewer-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.review-rating {
+    display: flex;
+}
+
+.filled {
+    color: #FFD700; /* Gold color for filled stars */
+}
+
+.unfilled {
+    color: #ccc; /* Light gray for unfilled stars */
+}
+
+.review-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Feedback Form Section */
+.feedbackDiv {
+    background-color: #fff;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Make sure the form covers full width */
+    max-width: 100%; /* Ensure it spans the full width of the screen */
+}
+
+.feedbackDiv h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.nameInput,
+.feedbackInput {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #555;
+    transition: border-color 0.3s;
+}
+
+.nameInput:focus,
+.feedbackInput:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.btn:hover {
+    background-color: #0056b3;
+}
+
+.successMessage {
+    font-size: 1.1rem;
+    color: green;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .secContent {
+        grid-template-columns: 1fr; /* Stack reviews on smaller screens */
+    }
+}

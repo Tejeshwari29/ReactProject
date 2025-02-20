@@ -1,0 +1,179 @@
+/* Container for the entire SignIn modal */
+.signin-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    z-index: 9999; /* Ensure the modal is on top */
+  }
+  
+  /* Title for the sign-in form */
+  .signin-modal h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  /* Form labels and inputs */
+  label {
+    display: block;
+    margin: 0.5rem 0;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Buttons */
+  button[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  button[type="submit"]:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  button[type="button"] {
+    padding: 0.8rem;
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #ddd;
+  }
+  
+  /* Error message */
+  .error {
+    color: red;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Forgot password link */
+  .auth-links {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .auth-links button {
+    background: none;
+    color: #007bff;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .auth-links button:hover {
+    color: #0056b3;
+  }
+  
+  /* Modal for Forgot Password and Reset Password */
+  .forgot-password-modal,
+  .reset-password-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    z-index: 10000;
+  }
+  
+  /* Close Button for modals */
+  /* Close Button for modals (red color) */
+button.close-modal {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: red; /* Red color for close button */
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+  
+  button.close-modal:hover {
+    color: darkred; /* Dark red color on hover */
+  }
+  
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .signin-modal {
+      width: 90%;
+      padding: 1.5rem;
+    }
+  
+    input {
+      font-size: 0.9rem;
+    }
+  
+    button[type="submit"], button[type="button"] {
+      font-size: 0.9rem;
+    }
+  }
+  .login-toggle {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .login-toggle button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .login-toggle button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  
